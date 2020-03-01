@@ -1,0 +1,354 @@
+@font-face {
+    font-family:Larish Neue Semibold ;
+    src: url(../font/Larish\ Neue\ Semibold.woff2);
+    font-family: LarishNeueSemibold;
+    src: url(../font/LarishNeueSemibold.woff);
+}
+@keyframes spin { 
+    100% { -webkit-transform: rotate(360deg); transform: rotate(360deg);} 
+}
+@keyframes example {
+    0%   {transform: translate(0);}
+    50%  {transform: translate(32% , 0);}
+    100% {transform: translate(0);}
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Work Sans';
+    overflow-x: hidden;
+}
+#header {
+    height: 100vh;
+    background-color: black;
+}
+#header .line {
+    height: 30vh;
+    border: 1px solid gray;
+    width: 0px;
+    margin: 0 auto;
+}
+.header-text {
+    color: white;
+    text-align: center;
+} 
+.header-text h4 {
+    font-size: 1.2em;
+    margin-top: 5%;
+    font-weight: 300;
+}
+.header-text h1 {
+    font-family: LarishNeueSemibold;
+    font-size: 6em;
+    margin-bottom: 0;
+}
+.header-text h2 {
+    font-family: LarishNeueSemibold;
+    color: black;
+    font-size: 6em;
+    margin-top: -3%;
+    -webkit-text-stroke: 2px white;
+}
+.header-text h3 {
+    font-size: 1.2em;
+    margin-bottom: 8%;
+    font-weight: 300;
+}
+.header-nav {
+    display: flex;
+    justify-content: space-between;
+}
+.header-nav img {
+    margin-left: 8%;
+    transform: scale(2);
+}
+.header-nav a {
+    margin-right: 8%;
+    border: 2px solid white;
+    border-radius: 3px;
+    box-shadow: 0 0 2px white;
+    padding: 2% 4%;
+    text-decoration: none;
+    color: white;
+    font-size: 1.3em;
+    transition: 0.5s ease;
+}
+.header-nav a:hover {
+    background: white;
+    color: black;
+}
+#main .section-first {
+    height: fit-content;
+    background-color: black;
+    color: white;
+}
+.section-first {
+    padding-left: 8%;
+    padding-top: 5%;
+}
+.section-first-headline {
+    width: 85%;
+}
+.section-first-headline h2 {
+    font-family: LarishNeueSemibold;
+    font-size: 6.3em;
+}
+.section-first-info {
+    padding-top: 10%;
+    padding-bottom: 10%;
+    background-image: url(../img/map.svg);
+    background-position: top right;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.section-first-info h2{
+    font-family: LarishNeueSemibold;
+    font-size: 6.3em;
+}
+.section-first-info h3 {
+    font-weight: 300;
+    font-size: 1.5em;
+}
+.section-line-top {
+    height: 20vh;
+    background-color: black;
+}
+.picture-action1 {
+    width: 25.5%;
+    padding-left: 67.5%;
+    margin-top: -6%;
+}
+.picture-action2 {
+    width: 21%;
+    padding-left: 4%;
+    margin-top: 11%;
+}
+.stuck-text {
+    width: 35%;
+    padding-left: 35%;
+    margin-top: -5%;
+}
+.stuck-text h2 {
+    font-family: LarishNeueSemibold;
+    font-size: 5.5em;
+}
+.stuck-text p {
+    line-height: 2;
+    font-size: 1.1em;
+}
+.picture-action3 {
+    width: 21%;
+    padding-left: 79%;
+    margin-top: -4%;
+}
+.picture-action4 {
+    width: 25%;
+    padding-left: 16%;
+    margin-top: 1%;
+}
+.picture-action5 {
+    width: 25%;
+    padding-left: 64%;
+    margin-top: -3%;
+}
+.picture-action6 {
+    width: 21%;
+    padding-left: 0;
+    margin-top: 6%;
+}
+.stuck-text-second {
+    width: 35%;
+    padding-left: 34%;
+    margin-top: -13%;
+    line-height: 2;
+    font-size: 1.05em;
+}
+.picture-action7 {
+    width: 33%;
+    padding-left: 46%;
+    margin-top: 6%;
+}
+.section-third {
+    background-color: black;
+    color: white;
+    padding-top: 13%;
+    padding-left: 8%;
+    margin-top: -6%;
+    margin-bottom: 25%;
+}
+.section-third-text h4 {
+    font-size: 1.4em;
+    padding-bottom: 2%;
+    font-weight: 400;
+}
+.section-third-text .section-third-headline {
+    display: flex;
+    padding-right: 8%;
+}
+.section-third-text div h2 {
+    font-family: LarishNeueSemibold;
+    font-size: 6em;
+    width: 60%;
+    padding-right: 22%;
+    line-height: 0.95;
+}
+.section-third-headline p {
+    font-family: LarishNeueSemibold;
+    font-size: 2em;
+}
+.section-third-headline h5 {
+    font-size: 1.2em;
+    font-weight: 400;
+    padding-top: 4%;
+    padding-bottom: 15%;
+}
+.section-third-img {
+    display: flex;
+    position: relative;   
+}
+.section-third-img .goldenbear-img {
+    width: 60%;
+    margin-bottom: -15%;
+}
+.section-third-img .goldenbear-img-second {
+    width: 30%;
+    height: 80%;
+    padding-top: 15%;
+    margin-left: -8%;
+    margin-bottom: -15%;
+}
+.section-third-img .circle-img {
+    width: 40%;
+    animation:spin 5s linear infinite;
+    position: absolute;
+    top: 65%;
+    right: -15%;
+    z-index: -1;
+}
+.section-fourth {
+    padding-top: 15%;
+    padding-left: 8%;
+    margin-top: -6%;
+}
+.section-fourth-text h4 {
+    font-size: 1.4em;
+    padding-bottom: 2%;
+    font-weight: 400;
+}
+.section-fourth-text .section-fourth-headline {
+    display: flex;
+    padding-right: 8%;
+}
+.section-fourth-text div h2 {
+    font-family: LarishNeueSemibold;
+    font-size: 6em;
+    width: 60%;
+    padding-right: 22%;
+    line-height: 0.95;
+}
+.section-fourth-headline p {
+    font-family: LarishNeueSemibold;
+    font-size: 2em;
+}
+.section-fourth-headline h5 {
+    font-size: 1.2em;
+    font-weight: 400;
+    padding-top: 4%;
+    padding-bottom: 15%;
+}
+.section-fourth-img {
+    display: flex;
+    flex-direction: row-reverse;
+    padding-right: 8%;    
+}
+.section-fourth-img .rosenbear-img {
+    width: 65%;
+    margin-bottom: -10%;
+    margin-left: -10%;
+}
+.section-fourth-img .pb3-img {
+    width: 35%;
+    padding-top: 15%;
+}
+#footer {
+    overflow: hidden;
+    margin-top: 15%;
+    background-color: black;
+    color: white;
+    position: relative;
+}
+#footer .animation {
+    width: 100vw;
+    position: absolute;
+    right: -20%;
+    top: 10%;    
+    transform: rotate(45deg);
+}
+#footer .animation h2 {
+    font-family: LarishNeueSemibold;
+    font-size: 6em;
+    color: black;
+    background: white;
+    animation-name: example;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate; 
+}
+#footer .footer-text {
+    padding-left: 8%;
+    padding-top: 10%;
+    width: 38%;
+}
+#footer .footer-text h4 {
+    font-size: 1.2em;
+    font-weight: 400;
+    padding-bottom: 3%;
+}
+#footer .footer-text p {
+    font-family: LarishNeueSemibold;
+    font-size: 2.2em;
+    line-height: 1.3;
+    margin-bottom: 8%;
+
+}
+#footer .footer-text a {
+    margin: 10% 0;
+    border: 2px solid white;
+    border-radius: 3px;
+    box-shadow: 0 0 2px white;
+    padding: 4% 8%;
+    text-decoration: none;
+    color: white;
+    font-size: 1.3em;
+    transition: 0.5s ease; 
+}
+#footer .footer-text a:hover {
+    background: white;
+    color: black;
+}
+#footer .footer-link {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 5%;
+    padding-bottom: 3%; 
+    padding-left: 8%;
+}
+#footer .facebook , #footer .instagram , #footer .linkedin {
+    width: 15%;
+    padding-right: 10%;
+}
+.redcross img {
+    width: 20%;
+}
+.social-link h4 , .social-link h3  {
+    font-size: 1.3em;
+    margin-top: 8%;
+    font-weight: 400;
+}
+.animation span {
+    -webkit-text-stroke: 2px black;
+    color: white;
+}
